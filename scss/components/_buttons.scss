@@ -1,0 +1,13 @@
+/* ======== INFO BTN ======== */
+.btn-info {
+    color: $white;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .75em 1.5em;
+    border-radius: .35em;
+    background-color: $color-primary;
+    margin-top: auto;
+}
