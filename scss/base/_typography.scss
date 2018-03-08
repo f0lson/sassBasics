@@ -5,6 +5,15 @@ body {
     h2 {
         font-family: $font-serif;
     }
+
+    p {
+        margin-bottom: 1.25em;
+
+        .intro & {
+            font-size: 1.2em;
+        }
+    }
+
     /* ======== HEADER ======== */
     header {
         h1 {

@@ -7,16 +7,17 @@
     li {
         display: inline-block;
         margin: 0 0.65em;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+        transition: $transition-300;
+        font-size: .85em;
+        text-transform: uppercase;
+        padding: .5em;
 
-        a {
+        &:hover {
             color: $color-accent;
-            text-decoration: none;
-            opacity: .8;
-            transition: $transition-300;
-
-            &:hover {
-                opacity: 1;
-            }
         }
     }
 }

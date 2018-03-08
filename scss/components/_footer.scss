@@ -1,6 +1,10 @@
 footer {
   padding: 2em 0 0;
   height: 100px;
-  background-color: #eee;
+  background-color: $color-shade;
   margin-top: 3.5em;
+  @include skewed {
+      background-color: $color-shade;
+      top: -15px;
+  }
 }

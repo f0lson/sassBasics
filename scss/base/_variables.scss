@@ -15,3 +15,28 @@ $font-serif : 'Bree Serif', serif;
 
 /*TRANSITION ------------------------*/
 $transition-300 : all 300ms ease;
+
+/*MAX WIDTH ------------------------*/
+
+$max-width : 1000px;
+
+/*MIXINS ------------------------*/
+@mixin skewed {
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        transform: skewY(-2deg);
+        position: absolute;
+        @content;
+    }
+}
+
+@mixin center {
+    width: 90%;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,13 +1,26 @@
 /* ======== INFO BTN ======== */
-.btn-info {
+.btn {
     color: $white;
     display: inline-block;
-    font-size: .85em;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     padding: .75em 1.5em;
     border-radius: .35em;
-    background-color: $color-primary;
-    margin-top: auto;
+    opacity: .9;
+    transition: $transition-300;
+
+    &-callout {
+        font-size: 1.1em;
+        background-color: $color-secondary;
+    }
+
+    &-info {
+        font-size: .85em;
+        margin-top: auto;
+        background-color: $color-primary;
+    }
+    &:hover {
+        opacity: 1;
+    }
 }
